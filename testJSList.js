@@ -41,3 +41,5 @@ function clr() {
 		document.getElementById(idList[i]).innerHTML = "";
 	}
 }
+
+const test = "Test";
