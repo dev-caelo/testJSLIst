@@ -31,7 +31,7 @@ info<classAcronym>
 //individual lists: 
 
 const infoCSA = ["CSA", "<a href='https://www.codingbat.com/java'>codingbat.com</a>", "quizlet"];
-const infoCSP = ["CSP", "codingbat.com", "canvas"];
+const infoCSP = ["CSP", "<a href='https://www.codingbat.com/python'>codingbat.com</a>", "canvas"];
 
 
 //classList: UPDATE the list with each class variable added
