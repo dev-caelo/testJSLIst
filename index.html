@@ -4,20 +4,142 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>testJSList</title>
+	<link href="JSList.css" rel="stylesheet">
+	<link href="topHeader.css" rel="stylesheet">
+	<link href="botHeader.css" rel="stylesheet">
+	<title>AP® Resources</title>
 </head>
 <body>	
-	<script src="classInfo.js"></script>
+	<header class=topPageHeader>
+		<div class="bigHead">
+			<div class="logoWrapper">
+				<div class="headerLogo">
+				</div>
+			</div>
+			<nav class="navHead">
+				<ul class="topList">
+					<li>
+						<a class="hubDrop" href="https://carlodino.com">
+							ABOUT
+					    </a>
+					</li>
+					<li>
+						<div class="matDrop" onclick="">
+							COLLEGE MATERIALS
+							<div class="matDropContent">
+								<div class="appWrapper">
+									<a href="https://carlodino.com">
+									Applications
+									</a>
+								</div>
+								<div class="scholarWrapper">
+									<a href="https://portfolio.carlodino.com">
+									Scholarships
+									</a>
+								</div>
+								<div class="compWrapper">
+									<a href="https://carlodino.com">
+									Competitions
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="suppDrop" onclick="">
+							SUPPORT
+							<div class="suppDropContent">
+								<div class="appWrapper">
+									<a href="https://carlodino.com">
+									Mental Health
+									</a>
+								</div>
+								<div class="scholarWrapper">
+									<a href="https://portfolio.carlodino.com">
+									AP® Resources
+									</a>
+								</div>
+								<div class="compWrapper">
+									<a href="https://carlodino.com">
+									Alumni Advice
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<header class="botPageHeader">
+		<div class="pageTitle">
+			<h1 class="pageTitle">AP® Resources</h1>
+		</div>
+	</header>
 	<script src="testJSList.js"></script>
-	<p id="alter">The text below should change if JS worked</p>
-	<button onclick="fillInfo('CSA')">click for csa</button>
-	<button onclick="fillInfo('CSP')">click for csp</button>
-	<button onclick="clr()">clear</button>
+	<script src="classInfo.js"></script>
+	<div class="infoHeader">
+		<h1>Resource Selection</h1>
+	</div>
+	<div class="classUI">
+		<div class="classInfo">
+			<button id="mathButton" class="classButton" onclick="show('Math', 'mathButton')">Math & CS</button> 
+			<div class="infoWrapper" id="Math">
+				<button class="miniButton" onclick="">Calculus AB</button>
+				<button class="miniButton" onclick="">Calculus BC</button>
+				<button class="miniButton" onclick="fillInfo('csa')">Computer Science A</button>
+				<button class="miniButton" onclick="fillInfo('csp')">Computer Science P.</button>
+			</div>
+			<button id="sciButton" class="classButton" onclick="show('Science', 'sciButton')">Sciences</button>
+			<div class="infoWrapper" id="Science">
+				<button class="miniButton" onclick="">Physics</button>
+				<button class="miniButton" onclick="">Biology</button>
+				<button class="miniButton" onclick="">Chemistry</button>
+				<button class="miniButton" onclick="">Environmental</button>
+			</div>
+			<button id="engButton" class="classButton" onclick="show('English', 'engButton')">English</button>
+			<div class="infoWrapper" id="English">
+				<button class="miniButton ENGminiButton" onclick="">Language and Comp.</button>
+				<button class="miniButton ENGminiButton" onclick="">Literature and Comp.</button>
+			</div>
+			<button id="socButton" class="classButton" onclick="show('Social', 'socButton')">Social Sciences</button>
+			<div class="infoWrapper" id="Social">
+				<button class="miniButton" onclick="">Human Geo.</button>
+				<button class="miniButton" onclick="">World History</button>
+				<button class="miniButton" onclick="">US History</button>
+				<button class="miniButton" onclick="">US Government</button>
+			</div>
+		</div>
+		<div class="outputWrapper">
+			<div class="classOutput">
+				<p id="calcAB"></p>
+				<p id="calcBC"></p>
+				<p id="csa"></p>
+				<p id="csp"></p>
+				<p id="physics"></p>
+				<p id="biology"></p>
+				<p id="chemistry"></p>
+				<p id="apes"></p>
+				<p id="lang"></p>
+				<p id="lit"></p>
+				<p id="hug"></p>
+				<p id="apwh"></p>
+				<p id="ush"></p>
+				<p id="gov"></p>
+			</div>
+			<button class="clrButton" onclick="clr()">Clear</button>
+		</div>
+	</div>
 
-	
 
-
-	<p id="info"></p>
-	<p id="CSP"></p>
-	<p id="CSA"></p>
+	<footer class="aboutFooter">
+		<a href="https://www.instagram.com/curricullege/">
+			<div class="igLOGO"></div>
+		</a>			
+		<p class="aboutFooter">@ Copyright 2020 Curricullege, All Rights Reserved</p>
+		<div class="infoDisclaimer">
+			DISCLAIMER: Curricullege is not affiliated, authorized, nor endorsed by any of the websites listed above.
+		</div>
+	</footer>
 </body>
+</html>
